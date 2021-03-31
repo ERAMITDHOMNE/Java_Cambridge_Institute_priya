@@ -1,0 +1,227 @@
+## Java Method
+A method is a block of code which only runs when it is called.You can pass data, known as parameters, into a method.
+Methods are used to perform certain actions, and they are also known as functions.
+
+Why use methods? To reuse code: define the code once, and use it many times.
+
+
+Create a Method
+A method must be declared within a class. It is defined with the name of the method, followed by parentheses (). Java provides some pre-defined methods, such as System.out.println(), but you can also create your own methods to perform certain actions:
+
+Example
+Create a method inside Main: //Syntax
+
+public class Main {
+  static void myMethod() {
+    // code to be executed
+  }
+}
+ 
+Example Explained
+myMethod() is the name of the method
+static means that the method belongs to the Main class and not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.
+void means that this method does not have a return value. 
+
+
+##############  Call a Method
+To call a method in Java, write the method's name followed by two parentheses () and a semicolon;
+
+In the following example, myMethod() is used to print a text (the action), when it is called:
+
+Example
+Inside main, call the myMethod() method:
+
+public class Main {
+  static void myMethod() {
+    System.out.println("I just got executed!");
+  }
+
+  public static void main(String[] args) {
+    myMethod();
+  }
+}
+
+// Outputs "I just got executed!"
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Java Method Parameter
+
+Java Method Parameters
+Parameters and Arguments
+Information can be passed to methods as parameter. Parameters act as variables inside the method.
+
+Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+
+The following example has a method that takes a String called fname as parameter. When the method is called, we pass along a first name, which is used inside the method to print the full name:
+
+Example
+public class Main {
+  static void myMethod(String fname) {
+    System.out.println(fname + " Refsnes");
+  }
+
+  public static void main(String[] args) {
+    myMethod("Liam");
+    myMethod("Jenny");
+    myMethod("Anja");
+  }
+}
+// Liam Refsnes
+// Jenny Refsnes
+// Anja Refsnes
+ 
+ 
+ 
+ When a parameter is passed to the method, it is called an argument. So, from the example above: fname is a parameter, while Liam, Jenny and Anja are arguments.
+
+Multiple Parameters
+You can have as many parameters as you like:
+
+Example
+public class Main {
+  static void myMethod(String fname, int age) {
+    System.out.println(fname + " is " + age);
+  }
+
+  public static void main(String[] args) {
+    myMethod("Liam", 5);
+    myMethod("Jenny", 8);
+    myMethod("Anja", 31);
+  }
+}
+
+// Liam is 5
+// Jenny is 8
+// Anja is 31 
+
+Note that when you are working with multiple parameters, the method call must have the same number of arguments as there are parameters, and the arguments must be passed in the same order.
+
+
+#  Scope of variables
+
+Java Scope
+In Java, variables are only accessible inside the region they are created. This is called scope.
+
+Method Scope
+Variables declared directly inside a method are available anywhere in the method following the line of code in which they were declared:
+
+Example
+public class Main {
+  public static void main(String[] args) {
+
+    // Code here CANNOT use x
+
+    int x = 100;
+
+    // Code here can use x
+    System.out.println(x);
+  }
+}
+
+Block Scope
+A block of code refers to all of the code between curly braces {}. Variables declared inside blocks of code are only accessible by the code between the curly braces, which follows the line in which the variable was declared:
+
+Example
+public class Main {
+  public static void main(String[] args) {
+
+    // Code here CANNOT use x
+
+    { // This is a block
+
+      // Code here CANNOT use x
+
+      int x = 100;
+
+      // Code here CAN use x
+      System.out.println(x);
+
+   } // The block ends here
+
+  // Code here CANNOT use x
+
+  }
+}
+
+A block of code may exist on its own or it can belong to an if, while or for statement. In the case of for statements, variables declared in the statement itself are also available inside the block's scope.
+
+
+
+
+##############################
+
+Java Constructor
+
+A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created. It can be used to set initial values for object attributes:
+
+Example
+Create a constructor:
+
+// Create a Main class
+public class Main {
+  int x;  // Create a class attribute
+
+  // Create a class constructor for the Main class
+  public Main() {
+    x = 5;  // Set the initial value for the class attribute x
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main(); // Create an object of class Main (This will call the constructor)
+    System.out.println(myObj.x); // Print the value of x
+  }
+}
+
+// Outputs 5
+ 
+
+Note that the constructor name must match the class name, and it cannot have a return type (like void).
+
+Also note that the constructor is called when the object is created.
+
+All classes have constructors by default: if you do not create a class constructor yourself, Java creates one for you. However, then you are not able to set initial values for object attributes.
+
+Constructor Parameters
+Constructors can also take parameters, which is used to initialize attributes.
+
+The following example adds an int y parameter to the constructor. Inside the constructor we set x to y (x=y). When we call the constructor, we pass a parameter to the constructor (5), which will set the value of x to 5:
+
+Example
+public class Main {
+  int x;
+
+  public Main(int y) {
+    x = y;
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main(5);
+    System.out.println(myObj.x);
+  }
+}
+
+// Outputs 5
+ 
+
+You can have as many parameters as you want:
+
+Example
+public class Main {
+  int modelYear;
+  String modelName;
+
+  public Main(int year, String name) {
+    modelYear = year;
+    modelName = name;
+  }
+
+  public static void main(String[] args) {
+    Main myCar = new Main(1969, "Mustang");
+    System.out.println(myCar.modelYear + " " + myCar.modelName);
+  }
+}
+
+// Outputs 1969 Mustang
