@@ -1,0 +1,71 @@
+# Java Program with IF condition
+
+public class Vishnupriya
+{  
+public static void main(String[] args) 
+{  
+    // varibable here is age with value 22
+    int age=22;  
+if(age > 18)  // ,/* if (age < 18)  */ 
+// if condition is true than only we come inside curli braces and print ,if condition failed we dont print
+{  
+System.out.print("Age is greater than 18");  
+}  
+} 
+
+_____________________________________________________________________________________________________________________
+public class Vishnupriya
+{
+  //global int priya = 23;   
+public static void main(String[] args)  // main
+{  
+    // varible here is age with value 22,local variable
+    int age=22; 
+Sytem.out.print("number="+priya);  
+if(age > 18)  // ,/* if (age < 18)  */ 
+// if condition is true than only we come inside curli braces and print ,if condition failed we dont print
+{  
+System.out.print("Age is greater than 18");  
+}
+// scope of print system inside curli braces /scope
+else
+{
+ System.out.print("Age is lesser than 18");   
+} 
+public void loco()
+{
+ System.out.print("Age is lesser than 18" + // age variable is local to main method
+}
+_________________________________________________________________________________________________________________
+
+Scope of variable
+
+A scope (also called a block) is a unit of code usually indicated by a pair of
+curly brackets. The whole body of a class is a scope, as is the body of each method and the if
+and else parts of an if statement.
+
+
+
+_________________________________________________________________________________________________
+Summary
+
+object creation Some objects cannot be constructed unless extra information is provided.
+■ field : Fields store data for an object to use. Fields are also known as instance variables.
+■ comment : Comments are inserted into the source code of a class to provide explanations to
+human readers. They have no effect on the functionality of the class.
+■ constructor  :Constructors allow each object to be set up properly when it is first created.
+■ scope : The scope of a variable defines the section of source code from which the variable can
+be accessed.
+■ lifetime : The lifetime of a variable describes how long the variable continues to exist before it
+is destroyed.
+■ assignment : Assignment statements store the value represented by the right-hand side of the
+statement in the variable named on the left.
+■ accessor method : Accessor methods return information about the state of an object.
+■ mutator method : Mutator methods change the state of an object.
+■ println The method System.out.println prints its parameter to the text terminal
+
+  
+
+
+
+
