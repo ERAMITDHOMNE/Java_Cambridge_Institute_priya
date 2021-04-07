@@ -1,0 +1,53 @@
+Object creation :
+
+Object creation when we create object of any class ,Memory get intialized to class and it get memory /space in Ram.it will help in execution of program sucessfully.
+
+ClockDisplay()
+{
+getTime();
+}
+
+ public void getTime() // method
+{
+
+starting time = 
+endtime=
+System.out.print(" startingtime and endtime" + startingtime + "  " + endtime);
+
+}
+
+
+// Constructor /Method Overloading
+
+A class may contain more than one constructor, or more than one method of the same name, as long as each has a distinctive set of parameter types.
+
+This is overloading of method ,as you see in example method name vishnupriya and parameter are different
+
+private void Vishupriya(string lastname)
+{
+
+}
+
+private void Vishnupriya(string Familyname){
+
+{
+
+}
+
+// calling
+1st method    , internal method name
+Vishupriya(M)
+
+//
+2nd method
+Vishupriya(A)
+
+
+
+
+
+// externl method calling
+objectname.Vishupriya(M)
+
+objectname.Vishupriya(A)
+
