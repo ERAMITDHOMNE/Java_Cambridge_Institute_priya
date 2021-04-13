@@ -1,0 +1,41 @@
+# Chapter 4
+Collection of element or grouping of element is called as collection.where we multiple element together inside one group .
+We can perform various operation on collection such as adding element ,removing element
+
+
+
+import java.util.ArrayList;  ie, Arraylist.java
+
+// java - > util -> ArrayList.java
+// vishnupriya  -> Laptop - > file 
+import vishnupriya.Laptop.file;//package 
+import vishupriya.laptop.*;
+
+It is an array based additional java program which we need to import in our program so we can predefined function/syntax 
+efficiently. " import java.util.ArrayList; " it is library that will help to validate the function we will going to use in 
+program
+
+group of class will combine to form package 
+for ex - import java.util.Arraylist   is an package  which is collection of java classes program inside java -> util -> folder
+
+
+When we put ! symbol before anything than it act as not
+! True = False
+! False = True
+
+Vishnupriya have created interface(a kind of class) ,where you have defined method name,constructor & parameter inside it,return type
+
+SOftware is build after combining servral classes Amazon app ia build after combining classes login class ,Registration is one class ,
+Buyingitem is one class,purchase option ,delivery shipping address is one class
+
+
+Amit has created one more class where I will going to implement method,constructor used by you based on my requirment
+
+Random is class of library ,randomGenerator is object 
+
+
+Random randomGenerator;
+randomGenerator = new Random(); // 9 
+int index = randomGenerator.nextInt(); // 10 17 19 20 
+System.out.println(index);
+

@@ -1,0 +1,75 @@
+Arraylist<String> priya having 2 index 0 t0 2 , 0 , 1, 2
+
+length of Arraylist = 3 ,length of arraylist = number of index  ,number of element
+As index starting from 0 ,what will be last index = length -1  , 2
+
+Q - If a collection stores 10 objects, what value would be returned from a call to
+its size method?
+
+Answer : 10 object in saved in Arraylist = 
+size  = number of element saved in arraylist , 10
+index  start 0 -9 ,last index will be 9
+
+# Remove element from arraylist
+
+priya.remove(index_number)
+priya.remove(0) # remove first element from array list
+priya.remove(9) # remove last element from arraylist
+.size ,.length ,number of element in arraylist
+
+
+
+##
+import java.util.ArrayList;
+
+java - > util -> Arraylist.java file this called collection of classes or single package that is used in program to validate the 
+predefined function that we used in program
+Size ,remove,length of arraylist
+
+
+# object hold value and its variable
+
+#Arijit is having list of song out of that you want to listen " khariyat pucho ,chichhore movie song star sushan singh" 2021
+String filename = files.get(index);
+player.startPlaying(filename)
+
+
+
+System.out.println(files.get(0));
+
+files is arraylist variable which will call get method to print value present at index 0;
+
+
+for loop 
+A loop can be used to execute a block of statements repeatedly without having to write them multiple times.
+
+System.out.println(" vishnupriya );
+System.out.println(" vishnupriya );
+System.out.println(" vishnupriya );
+System.out.println(" vishnupriya );
+System.out.println(" vishnupriya );
+System.out.println(" vishnupriya );
+System.out.println(" vishnupriya ); 
+##It is feasible to print it 1000 times writing this instruction to print your name or you will look for alternative method
+
+This is the case where you need for loop to print 1000
+
+Example:
+Syntax
+for(ElementType element : collection) 
+{
+loop body
+}
+
+________________________________________
+for each element in collection do: 
+{
+loop body
+}
+_____________________________________________
+Example
+for(String filename : files) # unless the last index of file , files is having 10 files  , 1 to 10 , file is collection Arraylist,holding files which is string type ,almost 10 file suppose
+{
+System.out.println(filename); # file 1 to file 10
+}
+
