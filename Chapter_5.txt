@@ -1,0 +1,61 @@
+# Chapter 5
+
+A HashMap however, store items in "key/value" pairs, and you can access them by an index of another type (e.g. a String).
+
+One object is used as a key (index) to another object (value). It can store different types: String keys and Integer values
+, or the same type, like: String keys and String values
+
+
+Name           Course   
+Vishnupriya    java
+Amit           DataScience
+Nisha          python
+Michigan       1
+
+"Name " : " java"
+"Michgan" :  1
+
+Key is your column name
+value  = value of column
+Hashmap Record
+
+{
+"Name" :" Vishnupriya"
+"Course" : "Java"
+}
+
+{
+"Name" : "Amit"
+"Course" :"DataScience"
+}
+
+
+
+
+
+
+## Syantax
+
+import java.util.HashMap; // import the HashMap class
+
+HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+capitalCities is collection of Hashmap type
+HashMap is using key and value
+
+
+# HashSet
+
+A set is a collection that stores each individual element at most once. It does not maintain 
+any specific order.It is unordered collection.
+
+A - B- > C
+
+Vishnu and priya are sister
+Vishnu -> and ->priya ->are -> sister   # LinkedHashset inorder to manage sequence of data they use address 
+
+vishnu ,are, sister , priya, and
+
+Vishnu->
+LinkedHashset manintained the order of nodes in data
+
