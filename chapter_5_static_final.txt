@@ -1,0 +1,117 @@
+What is Access Modifier ?
+Ans :-  Access modifiers define the visibility of a field, constructor, or method.
+Public elements are accessible from inside the same class and from other classes; private elements
+are accessible only from within the same class.
+
+For example : - Vishnupriya's mobile is personal /private to her , and her dad/mom   , i.e example of Private accessifier
+where you want to restrict the use of any method,constructor,variable than we declared it private
+
+Volvo bus in bangalore/train it is pubic everyone they can use.Whatever method,function variable you use in program if any other
+class want to use them than we can declared with public access modifier
+
+Whenever we developed software it is developed after combining several classes .such as online classes app
+login class,registration class,payment/fee class , scheduling classes,cancellation classes,one class to combine all classes
+
+
+Note :
+variable and method declared in Registration class such as username and password variable should be public ,so that login class use it
+
+The reason to use private variable is to hide the visibility of variable and method from outside class /another class
+
+
+
+## Information Hiding
+
+Information hiding is a principle that states that internal details of a class’s implementation should be hidden from other
+classes.It ensures better modularization of anapplication.
+Maintaining security of app by hiding visibility of method, constructor and variable members
+
+
+a = 20 , b = 50
+c = a + b
+c = 70
+a++ // increment  / error  you declared a and b as constant
+
+
+## static and final
+Classes can have fields. These are known as class variables or static
+variables. Exactly one copy exists of a class variable at all times, independent
+of the number of created instances
+
+###
+when you want to declared any variable as static final it mean the value of method will remain constant that mean it wont change
+in any case.IT will remain static unchanged
+
+pi = 3.14 (constant)
+area of circle = pi * square(r)
+
+## definition of static and final
+Static keyword is used to define variable as constant and whenever you declared any variable as static
+it mean you dont need to create object it will use class memory and it get instantiated with the help of
+class name also
+
+
+Syntax :
+In Java, constants are defined with the keyword final. For example:
+## syntax
+private final int SIZE = 10;
+
+Final keyword we use in java, but in other programming langugae similar final keyword is used by another term " Const" i.e constant
+
+# difference between static and FInal
+
+Final is used to make any variable constant so value doesn't change\
+
+Static keyword general meaning " unchange" so when we declared any variable as static
+it mean it will instantiated directly by class name we dont to create object for that
+
+
+# method is using variable that variable should not be constant in what case when you want to create object to call that method
+and that will going to change variable value , it will give error
+
+
+Summary :
+Java library The Java standard class library contains many classes that are very useful. It is
+important to know how to use the library.
+■ library documentation The Java class library documentation shows details about all classes
+in the library. Using this documentation is essential in order to make good use of library classes.
+
+■ interface The interface of a class describes what a class does and how it can be used without
+showing the implementation.
+
+■ implementation The complete source code that defines a class is called the implementation
+of that class.
+
+■ immutable An object is said to be immutable if its contents or state cannot be changed once
+it has been created. Strings are an example of immutable objects.
+
+■ map A map is a collection that stores key/value pairs as entries. Values can be looked up by
+providing the key.
+
+■ set A set is a collection that stores each individual element at most once. It does not maintain
+any specific order.
+
+■ documentation The documentation of a class should be detailed enough for other programmers
+to use the class without the need to read the implementation.
+
+■ access modifier Access modifiers define the visibility of a field, constructor, or method.
+Public elements are accessible from inside the same class and from other classes; private elements
+are accessible only from within the same class.
+
+■ information hiding Information hiding is a principle that states that internal details of a class’s
+implementation should be hidden from other classes. It ensures better modularization of an
+application.
+
+■ class variable, static variable Classes can have fields. These are known as class variables
+or static variables. Exactly one copy exists of a class variable at all times, independent of the
+number of created instances.
+
+
+
+
+
+
+
+
+
+   
