@@ -1,0 +1,41 @@
+Chapter 6 :
+
+Coupling : - it tells degree of interdependency of modules in code , different method /modules ,registration ,login,payment modules,filling 
+personal details,uploading document
+Working of one module should not affect other module
+
+
+Cohesion : it tells the degree of connnectivity between every modules,it says how stronly one modules connnected to other modules
+It is focus on describing functional strength of every module(Method,class) ,whether that modules is capable to perform hole task
+efficiently
+
+cohesion should be more ,coupling should be less(loose coupling)
+
+# Question (Important question)
+What is this Keyword in Java?
+this keyword in Java is a reference variable that refers to the current object of a method or a constructor. The main purpose of using this keyword in Java is to remove the confusion between class attributes and parameters that have same names.
+
+Following are various uses of 'this' keyword in Java:
+
+It can be used to refer instance variable of current class
+It can be used to invoke or initiate current class constructor
+It can be passed as an argument in the method call
+It can be passed as argument in the constructor call
+It can be used to return the current class instance
+
+
+Syntax
+this.variablename = argument_variable
+
+
+##
+Encapsulation is an one of the oops concept that is used to bind/combine variable,value,method,object together inside the class,all combine to act as single unit.
+It means it tells that better the binding between different unit ,good is the design of code
+
+
+The encapsulation guideline (hiding implementation information from view) suggests that only
+information about what a class can do should be visible to the outside, not about how it does it.
+This has a great advantage: if no other class knows how our information is stored, then we can
+easily change how it is stored without breaking other classes
+
+
